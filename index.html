@@ -1,0 +1,288 @@
+    <!DOCTYPE HTML>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>The Personal Location Experiment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel='stylesheet' id='prettyphoto-css'  href="css/prettyPhoto.css" type='text/css' media='all'>
+    <link href="css/fontello.css" type="text/css" rel="stylesheet">
+    <!--[if lt IE 7]>
+            <link href="css/fontello-ie7.css" type="text/css" rel="stylesheet">  
+        <![endif]-->
+    <!-- Google Web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.bmp">
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Load ScrollTo -->
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <!-- Load LocalScroll -->
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <!-- prettyPhoto Initialization -->
+    <script type="text/javascript" charset="utf-8">
+          $(document).ready(function(){
+            $("a[rel^='prettyPhoto']").prettyPhoto();
+          });
+        </script>
+    <!-- Line Chart -->
+<script type="text/javascript">
+	window.onload = function () {
+		var chart = new CanvasJS.Chart("chartContainer",
+		{
+
+			title:{
+				text: "Dummy Apartment Building Costs",
+				fontSize: 20
+			},
+			axisX:{
+
+				gridColor: "Silver",
+				tickColor: "silver",
+				valueFormatString: "YYYY"
+
+			},                        
+                        toolTip:{
+                          shared:true
+                        },
+			theme: "theme4",
+			axisY: {
+				gridColor: "Silver",
+				tickColor: "silver"
+			},
+			legend:{
+				verticalAlign: "center",
+				horizontalAlign: "right"
+			},
+			data: [
+			{        
+				type: "line",
+				showInLegend: true,
+				lineThickness: 2,
+				name: "Apt: 1",
+				markerType: "square",
+				color: "rgb(0,161,222)",
+				dataPoints: [
+				{ x: new Date(2004,01,01), y: 650232 },
+				{ x: new Date(2005,01,01), y: 700465 },
+				{ x: new Date(2006,01,01), y: 710398 },
+				{ x: new Date(2007,01,01), y: 658459 },
+				{ x: new Date(2008,01,01), y: 634456 },
+				{ x: new Date(2009,01,01), y: 623963 },
+				{ x: new Date(2010,01,01), y: 601847 },
+				{ x: new Date(2011,01,01), y: 620853 },
+				{ x: new Date(2012,01,01), y: 659869 },
+				{ x: new Date(2013,01,01), y: 669943 },
+				{ x: new Date(2014,01,01), y: 680970 }
+				]
+			},
+			{        
+				type: "line",
+				showInLegend: true,
+				lineThickness: 2,
+				name: "Apt: 2",
+				markerType: "triangle",
+				color: "rgb(114,199,231)",
+				dataPoints: [
+				{ x: new Date(2004,01,01), y: 530232 },
+				{ x: new Date(2005,01,01), y: 500465 },
+				{ x: new Date(2006,01,01), y: 510398 },
+				{ x: new Date(2007,01,01), y: 538459 },
+				{ x: new Date(2008,01,01), y: 520456 },
+				{ x: new Date(2009,01,01), y: 513063 },
+				{ x: new Date(2010,01,01), y: 501847 },
+				{ x: new Date(2011,01,01), y: 530853 },
+				{ x: new Date(2012,01,01), y: 559869 },
+				{ x: new Date(2013,01,01), y: 539943 },
+				{ x: new Date(2014,01,01), y: 520970 }
+				]
+			},
+			{        
+				type: "line",
+				showInLegend: true,
+				lineThickness: 2,
+				name: "Apt: 3",
+				markerType: "cross",
+				color: "rgb(82,208,255)",
+				dataPoints: [
+				{ x: new Date(2004,01,01), y: 500202 },
+				{ x: new Date(2005,01,01), y: 510465 },
+				{ x: new Date(2006,01,01), y: 520398 },
+				{ x: new Date(2007,01,01), y: 548459 },
+				{ x: new Date(2008,01,01), y: 560456 },
+				{ x: new Date(2009,01,01), y: 543063 },
+				{ x: new Date(2010,01,01), y: 581847 },
+				{ x: new Date(2011,01,01), y: 500853 },
+				{ x: new Date(2012,01,01), y: 509869 },
+				{ x: new Date(2013,01,01), y: 519943 },
+				{ x: new Date(2014,01,01), y: 530970 }
+				]
+			},
+			{        
+				type: "line",
+				showInLegend: true,
+				name: "Apt: 4",
+				color: "#20B2AA",
+				lineThickness: 2,
+
+				dataPoints: [
+				{ x: new Date(2004,01,01), y: 520510 },
+				{ x: new Date(2005,01,01), y: 540560 },
+				{ x: new Date(2006,01,01), y: 555540 },
+				{ x: new Date(2007,01,01), y: 581558 },
+				{ x: new Date(2008,01,01), y: 591544 },
+				{ x: new Date(2009,01,01), y: 570693 },
+				{ x: new Date(2010,01,01), y: 560657 },
+				{ x: new Date(2011,01,01), y: 583663 },
+				{ x: new Date(2012,01,01), y: 592639 },
+				{ x: new Date(2013,01,01), y: 600673 },
+				{ x: new Date(2014,01,01), y: 610660 }
+				]
+			}
+
+			
+			],
+          legend:{
+            cursor:"pointer",
+            itemclick:function(e){
+              if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+              	e.dataSeries.visible = false;
+              }
+              else{
+                e.dataSeries.visible = true;
+              }
+              chart.render();
+            }
+          }
+		});
+
+chart.render();
+}
+</script>
+    
+    <script type="text/javascript" src="js/canvasjs.min.js"</script>
+    </script>
+    <!-- Line Chart -->
+    </head>
+    <body>
+    <!--******************** NAVBAR ********************-->
+    <div class="navbar-wrapper">
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+            <h1 class="brand"><a href="#top">The Geospatial Practice</a></h1>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <nav class="pull-right nav-collapse collapse">
+              <ul id="menu-main" class="nav">
+                <li><a title="results" href="#results">The Results</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.navbar-inner -->
+      </div>
+      <!-- /.navbar -->
+    </div>
+    <!-- /.navbar-wrapper -->
+    <div id="top"></div>
+    <!-- ******************** HeaderWrap ********************-->
+    <div id="headerwrap">
+      <header class="clearfix">
+        <h1>ArcGIS Online map embed demo for DU Press</h1>
+      </header>
+    </div>
+    <!--******************** Feature ********************-->
+    <!--<div class="scrollblock">-->
+      <!--<section id="feature">-->
+        <!--<div class="container">-->
+          <!--<div class="row">-->
+            <!--<div class="span12">-->
+              <!--<article>-->
+                <!--<p><span>ArcGIS online changes all the time, which is grreeaat</span></p>-->
+              <!--</article>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; ./span12 &ndash;&gt;-->
+          <!--</div>-->
+          <!--&lt;!&ndash; .row &ndash;&gt;-->
+        <!--</div>-->
+        <!--&lt;!&ndash; ./container &ndash;&gt;-->
+      <!--</section>-->
+    <!--</div>-->
+    <!--******************** The Results Section ********************-->
+    <section id="results" class="single-page scrollblock">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="inside">
+              <hgroup>
+                <h2>Where in the world?</h2>
+              </hgroup>
+            <div>
+                <iframe src="https://deloittegeo.maps.arcgis.com/apps/Viewer/index.html?appid=7ce403c363ff4712b175c181bd692061" style="width:100%; height:600px; border:none; scrolling:no; overflow:hidden"></iframe>
+                <hr>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <hr>
+    <!--******************** News Section ********************-->
+    <div id="headerwrap">
+      <header class="clearfix">
+        <h1>ArcGIS Online is always changing...which is grreeaat</h1>
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+<!--
+              <input type="text" name="your-email" placeholder="you@yourmail.com" class="cform-text" size="40" title="your email">
+              <input type="submit" value="Notify me" class="cform-submit">
+-->
+            </div>
+          </div>
+         </div>
+      </header>
+    </div>
+</hr>
+    <!-- Loading the javaScript at the end of the page -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+    
+    <!--ANALYTICS CODE-->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-29231762-1']);
+	  _gaq.push(['_setDomainName', 'dzyngiri.com']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+    </body>
+    </html>
